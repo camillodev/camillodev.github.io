@@ -1,24 +1,30 @@
 /* Normalizando */
 
-*{
+* {
     margin: 0;
     padding: 0;
-    font-family: 'Lato', sans-serif;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
 }
 
-img{max-width: 100%;}
-.clear{clear: both;}
+a:link {
+    color: #fff;
+}
+
+img {
+    max-width: 100%;
+}
+
+.clear {
+    clear: both;
+}
+
 
 /* Removendo margens do Bootstrap */
-h1,
-h2,
-h3,
-h4,
-h5 {
-    margin: 0;
+
+.titulo {
+    margin-top: 20px;
 }
 
 
@@ -26,11 +32,13 @@ h5 {
 
 html,
 body {
-    font-family: Roboto;
-    font-size: 12px;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 16px;
     width: 100%;
     height: 100%;
     margin: 0;
+    line-height: 1.5;
+    color: #e53935;
 }
 
 
@@ -66,22 +74,61 @@ body {
 section {
     min-height: calc(100% - 1px);
     width: 100%;
+    margin-top: 50px;
 }
 
 #inicio {
-    background-image: url(/img/header_bg.jpg);
+    background-image: url(/img/note.jpg);
     background-attachment: fixed;
     color: #dedeff;
     background-repeat: no-repeat;
     background-size: cover;
+    min-height: calc(100% - 1px);
 }
 
-#projeto {
-    color: #e53935;
+#projeto {}
+
+#skills {
+    
+    
 }
 
-#sobre {
-    background-color: #2e72a2;
+.coder {
+    background-color: red;
+    height: 100%;
+    opacity: 0.7;
+    width: 100%;
+    left: -30;
+}
+
+.code {
+    background-color: aqua;
+    width: 55%;
+    margin-top: 50px;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    -webkit-transition: all 0.1s ease;
+    transition: all 0.1s ease;
+    overflow: hidden;
+    cursor: pointer;
+    /* background-position: bottom right;
+    background-image: none;*/
+    background-repeat: no-repeat;
+}
+
+.banner-designer {
+    width: 55%;
+    left: 0;
+    position: absolute;
+    -webkit-transition: all 0.1s ease;
+    transition: all 0.1s ease;
+    overflow: hidden;
+    height: 542px;
+    cursor: pointer;
+    /* background-position: bottom right;
+    background-image: none;*/
+    background-repeat: no-repeat;
 }
 
 #contato {
@@ -103,17 +150,60 @@ footer p {
 
 /* Classes gerais */
 
-/*234px;*/
-/*418px;*/
-/*600px*/
-/*784px;*/
 
-.box_carrossel{width: 600px; margin: 10% auto; position: relative; padding: 10px 30px; background: #fff; box-shadow: 0 0 5px 1px #000;}
-.box_carrossel .nav{position: absolute; top: 0; padding: 0 5px; display: table; height: 147px; background: cornflowerblue; color: #fff; font-size: 1.3em; cursor: pointer;}
-.box_carrossel .nav p{display: table-cell; vertical-align: middle;}
-.box_carrossel .nav:hover{background: #99ccff;}
-.box_carrossel .nav.back{left: 0;}
-.box_carrossel .nav.forth{right: 0;}
+/* 3 itens = 930 /pq são 300 de cada item e 10 de margem */
 
-.carrossel{list-style: none; width:1000%; float: left; background: #fff;}
-.carrossel .item{float: left; width: 173px; padding: 10px; margin-right: 10px; background: #99ccff;}
+.box_carrossel {
+    text-align: center;
+    width: 930px;
+    margin: auto;
+    padding: 10px;
+    background: #fff;
+    overflow: hidden;
+}
+
+.box_carrossel .nav {
+    position: absolute;
+    display: table;
+    height: 250px;
+    color: red;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.box_carrossel .nav p {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.box_carrossel .nav.esquerda {
+    left: 10%;
+}
+
+.box_carrossel .nav.direita {
+    right: 10%;
+}
+
+.carrossel {
+    list-style: none;
+    float: left;
+    background: #fff;
+}
+
+.carrossel .item {
+    float: left;
+    width: 300px;
+    margin-right: 10px;
+    border: solid 1px black;
+    padding: 0 0 15px 0;
+    background-color: #e53935;
+    color: #fff;
+}
+
+.carrossel .item img {
+    height: 250px;
+}
+
+.tituloProjeto {
+    margin-top: 15px;
+}

@@ -1,18 +1,26 @@
 $(function(){
-    var width = (parseInt($(".carrossel .item").outerWidth() + + parseInt($(".carrossel .item").css("margi-right")))) * $(".carrosel .item").length;    
+    var width = (parseInt($(".carrossel .item").outerWidth() + parseInt($(".carrossel .item").css("margin-right")))) * $(".carrossel .item").length;    
     $(".carrossel").css("width", width);
     
+    
     var numImages = 1;
-    var marginPadding = 30;
+    var marginPadding = 10;
     
     ident = 0;
-    var count = ($(".carrossel .item").length / numImages) - 1;
-    var slide  = (numImages + marginPadding) + ($(".carrossel .item").outerWidth() + numImages);
+    var count = ($(".carrossel .item").length / numImages) - 3;
+    var slide  = (numImages + marginPadding) + ($(".carrossel .item").outerWidth() * numImages);
     
-    $(".forth").click(function(){
+    $(".direita").click(function(){
        if (ident < count) {
            ident++;
            $(".carrossel").animate({"margin-left": "-=" + slide + "px"}, 500);
+       }
+    });
+    
+     $(".esquerda").click(function(){
+       if (ident >= 1) {
+           ident--;
+           $(".carrossel").animate({"margin-left": "+=" + slide + "px"}, 500);
        }
     });
 

@@ -4,17 +4,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/style.css" />
-    <script src="js/script.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Franklin" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>    
-    
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/style.css" />
     <script language="JavaScript" src="js/script.js"></script>
-
     <title>Camillo Devs</title>
 </head>
 
@@ -24,52 +20,58 @@
         <nav class="navbar navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#myPage">Camillo Dev</a>
-                </div>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a class="navbar-brand" href="#myPage">Camillo Dev</a> </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="#inicio">Inicio</a></li>
                         <li><a href="#projetos">Projetos</a></li>
                         <li><a href="#sobre">Sobre Mim</a></li>
+                        <li><a href="#skills">Habilidades</a></li>
                         <li><a href="#contato">Contato</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <section class="container-fluid" id="inicio">
-
-    </section>
-    <section class="container-fluid text-center" id="projeto">
-        <h2>Projetos</h2>
+    <section class="container-fluid" id="inicio"> </section>
+    <section class="container-fluid text-center" id="projetos">
+        <h2 class="titulo">Projetos</h2>
         <h3>O seu pode ser o próximo a estar aqui</h3>
-
+        <br/>
+        <br/>
         <div class="box_carrossel">
-            <div class="nav back"><p>&laquo;</p></div>
+            <div class="nav esquerda">
+                <p>&laquo;</p>
+            </div>
             <ul class="carrossel">
-                <li class="item"><img src="/img/chemtech.png" alt="[Xperia z3 - thumb]" title="Xperia z3 - thumb"/></li>
-                <li class="item"><img src="img/port.png" alt="[Xperia z3 - thumb]" title="Xperia z3 - thumb"/></li>
-                <li class="item"><img src="img/ports.jpg" alt="[Xperia z3 - thumb]" title="Xperia z3 - thumb"/></li>                
-                <li class="item"><img src="img/ports.jpg" alt="[Xperia z3 - thumb]" title="Xperia z3 - thumb"/></li>
-                <li class="item"><img src="img/ports.jpg" alt="[Xperia z3 - thumb]" title="Xperia z3 - thumb"/></li>
+                <li class="item">
+                    <a href="#"><img src="img/portfolio.png" alt="[Xperia z3 - thumb]" title="Xperia z3 - thumb" />
+                        <p class="tituloProjeto"><strong>A2B</strong></p>
+                    </a>
+                </li>
+                <li class="item"><img src="img/portfolio.png" alt="[Xperia z3 - thumb]" title="Xperia z3 - thumb" />
+                    <p class="tituloProjeto"><strong>DAT</strong></p>
+                </li>
+                <li class="item"><img src="/img/portfolio.png" alt="[Xperia z3 - thumb]" title="Xperia z3 - thumb" />
+                    <p class="tituloProjeto"><strong>Portfolio</strong></p>
+                </li>
+                <li class="item"><img src="/img/chemtech.png" alt="[Xperia z3 - thumb]" title="Xperia z3 - thumb" />
+                    <p class="tituloProjeto"><strong>Chemtech</strong></p>
+                </li>
+                <li class="item"><img src="/img/portfolio.png" alt="[Xperia z3 - thumb]" title="Xperia z3 - thumb" />
+                    <p class="tituloProjeto"><strong>A2B</strong></p>
+                </li>
             </ul>
-            <div class="nav forth"><p>&raquo;</p></div>
-            <div class="clear"></div>
+            <div class="nav direita">
+                <p>&raquo;</p>
+            </div>
         </div>
-
     </section>
-    <section class="container-fluid" id="sobre">
-
+    <section id="skills">
+        <div class="code"> <img src="img/eu1.png" alt "Desenvolvedor"> </div>
     </section>
-    <section class="container-fluid" id="contato">
-
-    </section>
-
+    <section class="container-fluid" id="sobre"> </section>
+    <section class="container-fluid" id="contato"> </section>
     <footer class="container-fluid">
         <p>Desenvolvido por <a href="https://www.linkedin.com/in/camillodev" title="Rafael Camillo">Camillo Dev</a></p>
     </footer>
