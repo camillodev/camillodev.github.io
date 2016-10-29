@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Libre+Franklin" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/style.css" />
@@ -33,56 +34,129 @@
             </div>
         </nav>
     </header>
-    <section class="container-fluid" id="inicio"> </section>
-    <section class="container-fluid text-center" id="projetos">
-        <h2 class="titulo">Projetos</h2>
-        <h3>O seu pode ser o próximo a estar aqui</h3>
-        <br/>
-        <br/>
-        <div class="box_carrossel">
-            <div class="nav esquerda">
-                <p>&laquo;</p>
+    <section id="inicio">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                </ol>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active"> <img src="/img/bannerIntegra.jpg" alt="Projeto A2B">
+                        <div class="carousel-caption">
+                            <p>A2B Logistica</p>
+                            <input type="button" class="btn btn-info" value="Veja o projeto aqui" onclick="abrirProjeto("a2b")"> 
+                        </div>
+                    </div>
+                    <div class="item"> <img src="/img/chemtech.jpg" alt="Projeto Chemtech">
+                        <div class="carousel-caption">
+                             <p>Chemtech</p>
+                             <input type="button" class="btn btn-info" value="Veja o projeto aqui" onclick="abrirProjeto("chemtech")"> 
+                        </div>
+                    </div>
+                    <div class="item"> <img src="/img/diretorio.jpg" alt="Projeto DAT">
+                        <div class="carousel-caption">
+                             <p>Diretório Acadêmico de Tecnologia</p>
+                             <input type="button" class="btn btn-info" value="Veja o projeto aqui" onclick="abrirProjeto("dat")"> 
+                        </div>
+                    </div>   
+                    <div class="item"> <img src="/img/desktop%20dream.jpg" alt="Projeto Portfolio">
+                        <div class="carousel-caption">
+                             <p>Portfolio</p>
+                             <input type="button" class="btn btn-info" value="Veja o projeto aqui" onclick="abrirProjeto("portfolio")"> 
+                        </div>
+                    </div>  
+                </div>
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a>
+                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> <span class="sr-only">Next</span> </a>
             </div>
-            <ul class="carrossel">
-                <li class="item">
-                    <a href="#"><img src="img/portfolio.png" alt="[Xperia z3 - thumb]" title="Xperia z3 - thumb" />
-                        <p class="tituloProjeto"><strong>A2B</strong></p>
-                    </a>
-                </li>
-                <li class="item"><img src="img/portfolio.png" alt="[Xperia z3 - thumb]" title="Xperia z3 - thumb" />
-                    <p class="tituloProjeto"><strong>DAT</strong></p>
-                </li>
-                <li class="item"><img src="/img/portfolio.png" alt="[Xperia z3 - thumb]" title="Xperia z3 - thumb" />
-                    <p class="tituloProjeto"><strong>Portfolio</strong></p>
-                </li>
-                <li class="item"><img src="/img/chemtech.png" alt="[Xperia z3 - thumb]" title="Xperia z3 - thumb" />
-                    <p class="tituloProjeto"><strong>Chemtech</strong></p>
-                </li>
-                <li class="item"><img src="/img/portfolio.png" alt="[Xperia z3 - thumb]" title="Xperia z3 - thumb" />
-                    <p class="tituloProjeto"><strong>A2B</strong></p>
-                </li>
-            </ul>
-            <div class="nav direita">
-                <p>&raquo;</p>
+    </section>   
+    <section id="sobre">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="banner-coder"> <img src="img/coder.jpg" alt="Desenvolvedor">
+                    <div class="content">
+                        <h2>Developer</h2>
+                        <p>Eu desenvolvo sites responsivos, sempre pensando em performance e nas boas práticas de mercado. Também possuo um sólido conhecimento como Back End. Código é minha grande paixão.</p>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <p><a href="#skills">Conheça minhas habilidades abaixo.</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="banner-design"> <img src="img/designer.jpg" alt="Designer">
+                    <div class="content">
+                        <h2>Designer</h2>
+                        <p>Eu desenho sua ideia desde a concepção até o produto completamente funcional e de qualidade. Sempre me preocupando de alinhar a experiência do usuário com o objetivo do seu negócio.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <section id="skills">
-        <div class="banner-coder">
-            <img src="img/coder.jpg" alt="Desenvolvedor">
-            <div class="coder-content">
-                <h2>Developer</h2> 
+    <section id="skills" class="text-center">
+        <h2 class="titulo">Habilidades</h2>
+        <br>
+        <div class="row">
+            <div class="col-sm-4"> <i class="material-icons logo-small">important_devices</i>
+                <h3>Front End</h3>
+                <p> Desenvolvimento de paginas web responsivas e otimizadas para exibição em mobiles e desktops.Utilizando tecnologias como HTML5, CSS3, JavaScript, Jquery, Bootstrap, JSON, Ajax, Grunt, entre outras.</p>
+            </div>
+            <div class="col-sm-4"> <i class="material-icons">settings</i>
+                <h3>Back End</h3>
+                <p>Desenvolvimento e arquitetura de sistemas que requerem utilização de linguagem Server Side, Integrações via API ou Web Services, e/ou comunicação com Banco de Dados. Utilizando: C#, .Net, MVC, Linq, Entity Framework. </p>
+            </div>
+            <div class="col-sm-4"> <i class="material-icons logo-small">brush</i>
+                <h3>Design</h3>
+                <p> Desenhando soluções para o seu projeto, sempre preocupado em oferecer uma otima experiência para o seu usuário. Realização de alguns processos como pesquisas com usuario, teste de usabilidade, wireframe, prototipação, card sorting, etc... </p>
             </div>
         </div>
-        <div class="banner-design"> <img src="img/designer.jpg" alt="Designer">
-            <div class="design-content">
-                <h2>Designer</h2> </div>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-sm-4"> <i class="material-icons logo-small">storage</i>
+                <h3>Banco de Dados</h3>
+                <p>Desenvolvimento de Procedures, Functions, Script, Crud(inserir, atualizar, deletar, listar). Usando SQL Server, Postgre ou My SQL</p>
+            </div>
+            <div class="col-sm-4"> <i class="material-icons logo-small">device_hub</i>
+                <h3>Versionamento</h3>
+                <p>Gerenciamento de versões no desenvolvimento de software, utilizando Git ou SVN.</p>
+            </div>
+            <div class="col-sm-4"> <i class="material-icons logo-small">work</i>
+                <h3>Serviços</h3>
+                <p>Utilizando todo esse conhecimento, também presto serviços de freelance desenvolvendo sites, eccomerces, layouts entre outros serviços.</p>
+            </div>
         </div>
     </section>
-    <section class="container-fluid" id="sobre"> </section>
-    <section class="container-fluid" id="contato"> </section>
+    <section id="contato" class="text-center">
+        <div class="row">
+            <h2>Contato</h2>
+            <div class="col-sm-6" id="formulario">
+                <form class="envio">
+                    <p>Fale comigo!</p>
+                    <input type="text" name="name" required placeholder=" Nome*">
+                    <input type="text" name="email" required placeholder=" adriano@gmail.com*">
+                    <input type="text" name="telefone" placeholder=" Telefone">
+                    <textarea name="mensagem" required id="msg" placeholder=" Digite aqui sua mensagem..."></textarea>
+                    <input type="button" class="btn btn-info" value="Enviar"> 
+                </form>
+            </div>
+            <div class="col-sm-6" id="dados">
+                <p><span class="glyphicon glyphicon-map-marker"></span> Rio de Janeiro, Brasil</p>
+                <p><span class="glyphicon glyphicon-phone"></span> +55 21 97047-4317</p>
+                <p><span class="glyphicon glyphicon-envelope"></span> camillodeveloper@gmail.com</p>
+                <p> <a href="https://linkedin.com/in/camillodev"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a> <a href="https://instagram.com/camillodeveloper/"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a><a href="https://github.com/rcamillo"><i class="fa fa-github-alt fa-2x" aria-hidden="true"></i></a></p>
+            </div>
+        </div>
+    </section>
     <footer class="container-fluid">
-        <p>Desenvolvido por <a href="https://www.linkedin.com/in/camillodev" title="Rafael Camillo">Camillo Dev</a></p>
+        <p>Desenvolvido por <a href="https://www.linkedin.com/in/camillodev" style = "color:#428bca;" title="Rafael Camillo">Camillo Dev</a></p>
     </footer>
 </body>
 

@@ -20,11 +20,21 @@ img {
     clear: both;
 }
 
+a {
+    color: #fff;
+}
+
+a:hover {
+    color: #fff;
+}
+
 
 /* Removendo margens do Bootstrap */
 
 .titulo {
     margin-top: 20px;
+    text-align: center;
+    color: #e53935;
 }
 
 
@@ -41,6 +51,14 @@ body {
     color: #e53935;
 }
 
+h2 {
+    font-weight: 700;
+}
+
+h3 {
+    font-weight: 600;
+}
+
 
 /* Menu */
 
@@ -50,8 +68,8 @@ body {
 }
 
 .navbar li a,
-.navbar .navbar-brand {
-    color: #fff !important;
+.navbar {
+    color: #fff;
 }
 
 
@@ -59,13 +77,8 @@ body {
 
 .navbar-nav li a:hover,
 .navbar-nav li.active a {
-    color: #e53935 !important;
-    background-color: #fff !important;
-}
-
-.navbar-default .navbar-toggle {
-    border-color: transparent;
-    color: #fff !important;
+    color: #e53935;
+    background-color: #fff;
 }
 
 
@@ -74,78 +87,133 @@ body {
 section {
     min-height: calc(100% - 1px);
     width: 100%;
-    margin-top: 50px;
 }
 
 #inicio {
-    background-image: url(/img/note.jpg);
-    background-attachment: fixed;
-    color: #dedeff;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: calc(100% - 1px);
+    margin-top: 50px;
 }
 
-#projeto {}
+.carousel {
+    width: 100%;
+    height: 100%;
+}
 
-#skills {}
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 100%;
+    height: 650px;    
+    filter: grayscale(30%);
+}
+
+.carousel-caption {
+    margin: 0 auto;
+    top: 40%;
+    color: #fff;
+    font-size: 34px;
+    font-weight: 600;
+    text-shadow: -1.5px 0 black, 0 1.5px black, 1.5px 0 black, 0 -1.5px black;
+}
+.btn-info{
+    background-color: #e53935;
+    border-color: #e53935;
+}
+.btn-info:hover, .btn-info:focus, .btn-info:active, .btn-info.active, .open .dropdown-toggle.btn-info {
+     filter: grayscale(50%);
+}
+#skills {
+    color: #222;
+}
+
+#contato {
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.fa {
+    margin-right: 30px;
+}
+
+.fa:hover {
+    color: #e53935;
+}
+
+#formulario {
+    text-align: center;
+}
+
+#dados {
+    padding-top: 10%;
+}
+
+form input {
+    margin-top: 25px;
+    width: 70%;
+    border-color: #000000;
+    border: 1.5px solid;
+    border-radius: 3px;
+}
+
+#msg {
+    height: 200px;
+    text-align: left;
+    width: 70%;
+    margin-top: 25px;
+    border-radius: 3px;
+}
+
+#social {
+    color: #fff;
+}
+
+.material-icons {
+    font-size: 48px;
+    color: #e53935
+}
 
 .banner-coder {
     background-color: #007cb7;
-    width: 55%;
-    margin-top: 50px;
     height: 600px;
     left: 0;
     position: absolute;
 }
 
-.coder-content {
-    color: white;
+.banner-coder .content {
     float: right;
+    margin-right: 30px;
+    text-align: right;
+}
+
+.content {
+    color: #fff;
     padding-top: 50px;
-    margin-right: 35px;
+    width: 45%;
 }
 
 .banner-design {
     background-color: #ff3632;
-    width: 45%;
-    color: white;
-    margin-top: 50px;
+    color: #fff;
     height: 600px;
     right: 0;
     text-align: right;
     position: absolute;
 }
 
-.design-content {
+.banner-design .content {
     float: left;
-    padding-top: 50px;
-    margin-left: 35px;
+    text-align: left;
+    margin-left: 30px;
 }
 
-
-/*.banner-designer {
-    width: 55%;
-    right: 0;
-    position: absolute;
-    -webkit-transition: all 0.1s ease;
-    transition: all 0.1s ease;
-    overflow: hidden;
-    cursor: pointer;
-    /* background-position: bottom right;
-    background-image: none;
-    background-repeat: no-repeat;
-}*/
-
 #contato {
-    background-color: #343434;
+    background-color: #212121;
 }
 
 
 /* Cabeçalho */
 
 footer {
-    background-color: #222222;
+    background-color: #000000;
     color: #fff;
 }
 
@@ -157,7 +225,7 @@ footer p {
 /* Classes gerais */
 
 
-/* 3 itens = 930 /pq são 300 de cada item e 10 de margem */
+/* 3 itens = 930 /pq são 300 de cada item e 10 de margem 
 
 .box_carrossel {
     text-align: center;
@@ -212,4 +280,4 @@ footer p {
 
 .tituloProjeto {
     margin-top: 15px;
-}
+}*/
