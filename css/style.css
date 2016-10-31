@@ -8,6 +8,11 @@
     -webkit-box-sizing: border-box;
 }
 
+.row {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 a:link {
     color: #fff;
 }
@@ -26,6 +31,10 @@ a {
 
 a:hover {
     color: #fff;
+}
+
+.input {
+    color: #000;
 }
 
 
@@ -81,7 +90,15 @@ h3 {
     background-color: #fff;
 }
 
-
+.img-responsive,
+.thumbnail > img,
+.thumbnail a > img,
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 /* sessoes*/
 
 section {
@@ -101,7 +118,7 @@ section {
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
     width: 100%;
-    height: 650px;    
+    height: 650px;
     filter: grayscale(30%);
 }
 
@@ -113,15 +130,23 @@ section {
     font-weight: 600;
     text-shadow: -1.5px 0 black, 0 1.5px black, 1.5px 0 black, 0 -1.5px black;
 }
-.btn-info{
+
+.btn-info {
     background-color: #e53935;
     border-color: #e53935;
 }
-.btn-info:hover, .btn-info:focus, .btn-info:active, .btn-info.active, .open .dropdown-toggle.btn-info {
-     filter: grayscale(50%);
+
+.btn-info:hover,
+.btn-info:focus,
+.btn-info:active,
+.btn-info.active,
+.open .dropdown-toggle.btn-info {
+    filter: grayscale(50%);
 }
+
 #skills {
     color: #222;
+    margin-bottom: 30px;
 }
 
 #contato {
@@ -154,6 +179,10 @@ form input {
     border-radius: 3px;
 }
 
+.text-center {
+    text-align: center;
+}
+
 #msg {
     height: 200px;
     text-align: left;
@@ -166,16 +195,16 @@ form input {
     color: #fff;
 }
 
-.material-icons {
-    font-size: 48px;
-    color: #e53935
-}
-
 .banner-coder {
     background-color: #007cb7;
     height: 600px;
     left: 0;
     position: absolute;
+}
+
+#skills .material-icons {
+    font-size: 48px;
+    color: #e53935
 }
 
 .banner-coder .content {
@@ -222,62 +251,35 @@ footer p {
 }
 
 
-/* Classes gerais */
+/*  Menu */
 
-
-/* 3 itens = 930 /pq são 300 de cada item e 10 de margem 
-
-.box_carrossel {
-    text-align: center;
-    width: 930px;
-    margin: auto;
-    padding: 10px;
-    background: #fff;
-    overflow: hidden;
+.navbar-default {
+    border: none;
 }
 
-.box_carrossel .nav {
-    position: absolute;
-    display: table;
-    height: 250px;
-    color: red;
-    font-size: 40px;
-    cursor: pointer;
-}
-
-.box_carrossel .nav p {
-    display: table-cell;
-    vertical-align: middle;
-}
-
-.box_carrossel .nav.esquerda {
-    left: 10%;
-}
-
-.box_carrossel .nav.direita {
-    right: 10%;
-}
-
-.carrossel {
-    list-style: none;
-    float: left;
-    background: #fff;
-}
-
-.carrossel .item {
-    float: left;
-    width: 300px;
-    margin-right: 10px;
-    border: solid 1px black;
-    padding: 0 0 15px 0;
-    background-color: #e53935;
+.navbar-default .navbar-brand {
     color: #fff;
 }
 
-.carrossel .item img {
-    height: 250px;
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
 }
 
-.tituloProjeto {
-    margin-top: 15px;
-}*/
+.navbar-default .navbar-toggle {
+    border: none;
+    color: #fff;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #e53935;
+}
+
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+    border: none;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
