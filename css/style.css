@@ -118,11 +118,20 @@ section {
     height: 100%;
 }
 
-.carousel-inner > .item > img,
-.carousel-inner > .item > a > img {
+
+.carousel
+.carousel-inner>.carousel-item>a>img,
+.carousel-inner>.carousel-item>img,
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.carousel-inner img {
     width: 100%;
-    height: 650px;
-    filter: grayscale(30%);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .carousel-caption {
