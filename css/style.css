@@ -95,10 +95,12 @@ h3 {
 .thumbnail a > img,
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
-  display: block;
-  width: 100%;
-  height: auto;
+    display: block;
+    width: 100%;
+    height: auto;
 }
+
+
 /* sessoes*/
 
 section {
@@ -108,6 +110,7 @@ section {
 
 #inicio {
     margin-top: 50px;
+    height: 600px;
 }
 
 .carousel {
@@ -195,43 +198,9 @@ form input {
     color: #fff;
 }
 
-.banner-coder {
-    background-color: #007cb7;
-    height: 600px;
-    left: 0;
-    position: absolute;
-}
-
 #skills .material-icons {
     font-size: 48px;
     color: #e53935
-}
-
-.banner-coder .content {
-    float: right;
-    margin-right: 30px;
-    text-align: right;
-}
-
-.content {
-    color: #fff;
-    padding-top: 50px;
-    width: 45%;
-}
-
-.banner-design {
-    background-color: #ff3632;
-    color: #fff;
-    height: 600px;
-    right: 0;
-    text-align: right;
-    position: absolute;
-}
-
-.banner-design .content {
-    float: left;
-    text-align: left;
-    margin-left: 30px;
 }
 
 #contato {
@@ -282,4 +251,72 @@ footer p {
 
 .navbar-default .navbar-toggle .icon-bar {
     background-color: #fff;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-sm-6 {
+    padding: 0;
+    margin: 0;
+}
+
+.banner-coder {
+    background-color: #007cb7;
+    height: 600px;
+    left: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.banner-design {
+    background-color: #ff3632;
+    color: #fff;
+    height: 600px;
+    right: 0;
+    text-align: right;
+}
+
+.content {
+    color: #fff;
+    padding-top: 50px;
+    width: 45%;
+}
+
+.banner-coder .content {
+    float: right;
+    margin-right: 30px;
+    text-align: right;
+}
+
+.banner-design .content {
+    float: left;
+    text-align: left;
+    margin-left: 30px;
+}
+
+@media screen and (max-width: 700px) {
+    #coder {
+        order: 1;
+        width: 100%;
+    }
+    #designer {
+        order: 2;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .banner-coder .content {
+        margin-right: 15px;
+    }
+    .banner-coder img {
+        height: 600px;
+    }
+    .banner-design img {
+        height: 600px;
+        width: 30%;
+    }
 }
