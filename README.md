@@ -1,8 +1,9 @@
 # CamilloDev
 Portfolio do Udacity
 
-Data:  10/2016 (Em Andamento)
+Data:  10/2016 (Em Andamento) <br>
 Plataforma: Todos os Browsers e mobiles.
+
 Repositório: https://github.com/rcamillo/CamilloDev 
 Os objetivos do site: Um portfólio online com todos os projetos em que trabalhei para a divulgação profissional dos meus trabalhos e habilidades. 
 Desafio: Criar um site de portfólio baseado em mockup de design. O site deverá ser responsivo, exibir imagens, descrições e links para cada projeto que completar tiver realizado e que realizar durante o Nanodegree Front-End. Não é necessário seguir o design do mockup, caso tenha interesse poderá desenvolver o próprio design.
