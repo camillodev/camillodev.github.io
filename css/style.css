@@ -333,13 +333,7 @@ footer p {
     height: 400px;
 }
 
-.btn-success {
-    background-color: #e53935;
-    border-color: #e53935;
-    color: #fff;
-}
-
-.btn-success:hover {
+.btn-success,.btn-success:hover {
     background-color: #e53935;
     border-color: #e53935;
     color: #fff;
