@@ -163,7 +163,7 @@ h3 {
     .thumbnail a > img,
     .carousel-inner > .item > img,
     .carousel-inner > .item > a > img {
-        height: 800px;
+        height: 1200px;
         width: 100%;
     }
 }
