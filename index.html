@@ -1,150 +1,179 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="css/style.css" />
-    <script language="JavaScript" src="js/script.js"></script>
-    <title>Camillo Dev</title>
-</head>
-
-<body>
-    <header>
-        <!-- Menu-->
-        <nav class="navbar navbar-default navbar-fixed-top">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a class="navbar-brand" href="#inicio">Camillo Dev</a> </div>
-                <div class="collapse navbar-collapse" id="myNavbar">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#inicio">Inicio</a></li>
-                        <li><a href="#sobre">Sobre Mim</a></li>
-                        <li><a href="#skills">Habilidades</a></li>
-                        <li><a href="#contato">Contato</a></li>
-                    </ul>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://raw.githubusercontent.com/rcamillo/CamilloDev/gh-pages/img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="css/style.css" />
+       
+        <title>Camillo Dev</title>
+    </head>
+    <body>
+        <header>
+            <!-- Menu-->
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a class="navbar-brand" href="#inicio">Camillo Dev</a> </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#inicio">Inicio</a></li>
+                            <li><a href="#sobre">Sobre Mim</a></li>
+                            <li><a href="#skills">Habilidades</a></li>
+                            <li><a href="#contato">Contato</a></li>
+                        </ul>
+                    </div>
                 </div>
+            </nav>
+        </header>
+        <section>
+            <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                </ol>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active"> <img src="https://raw.githubusercontent.com/rcamillo/CamilloDev/gh-pages/img/integra_2x.jpg" class="img-responsive" alt="Projeto A2B">
+                        <div class="carousel-caption">
+                            <p>A2B Logistica</p> <a href="a2b.html" class="btn btn-success">Veja o projeto aqui</a> </div>
+                    </div>
+                    <div class="item"> <img src="https://raw.githubusercontent.com/rcamillo/CamilloDev/gh-pages/img/chemtech_2x.jpg" class="img-responsive" alt="Projeto Chemtech">
+                        <div class="carousel-caption">
+                            <p>Chemtech</p>
+                            <a href="chemtech.html" class="btn btn-success">Veja o projeto aqui</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="https://raw.githubusercontent.com/rcamillo/CamilloDev/gh-pages/img/camillodev.jpg" class="img-responsive" alt="Projeto Portfolio">
+                        <div class="carousel-caption">
+                            <p>Portfolio</p> <a href="portfolio.html" class="btn btn-success">Veja o projeto aqui</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="https://raw.githubusercontent.com/rcamillo/CamilloDev/gh-pages/img/dat1.jpg" class="img-responsive" alt="Projeto Portfolio">
+                        <div class="carousel-caption">
+                            <p>D.A.T</p> <a href="dat.html" class="btn btn-success">Veja o projeto aqui</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
-        </nav>
-    </header>
-    <section id="inicio">
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-                <li data-target="#myCarousel" data-slide-to="3"></li>
-            </ol>
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner" role="listbox">
-                <div class="item active"> <img src="https://raw.githubusercontent.com/rcamillo/CamilloDev/gh-pages/img/integra_2x.jpg" class="img-responsive" alt="Projeto A2B">
-                    <div class="carousel-caption">
-                        <p>A2B Logistica</p> <a href="a2b.html" class="btn btn-success">Veja o projeto aqui</a> </div>
+        </section>
+        <section>
+            <div class="row linha">
+                <div class="col-sm-6 coluna">
+                    <div class="banner-coder">
+                        <img src="https://raw.githubusercontent.com/rcamillo/CamilloDev/gh-pages/img/coder.jpg" alt="Desenvolvedor">
+                        <div class="content">
+                            <h2>Developer</h2>
+                            <p>
+                                Eu desenvolvo sites responsivos, sempre pensando em performance e nas boas práticas de mercado. Também possuo um sólido conhecimento como Back End. Código é minha grande paixão.
+                            </p>
+                            <br/><br/><br/>
+                            <a href="https://goo.gl/y16RL3" target="_blank" class="btn btn-success">Veja meu curriculo</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="item"> <img src="https://raw.githubusercontent.com/rcamillo/CamilloDev/gh-pages/img/chemtech_2x.jpg" class="img-responsive" alt="Projeto Chemtech">
-                    <div class="carousel-caption">
-                        <p>Chemtech</p> <a href="chemtech.html" class="btn btn-success">Veja o projeto aqui</a> </div>
-                </div>
-                <div class="item"> <img src="https://raw.githubusercontent.com/rcamillo/CamilloDev/gh-pages/img/camillodev_2x.jpg" class="img-responsive" alt="Projeto Portfolio">
-                    <div class="carousel-caption">
-                        <p>Portfolio</p> <a href="portfolio.html" class="btn btn-success">Veja o projeto aqui</a> </div>
-                </div>
-                <div class="item"> <img src="https://raw.githubusercontent.com/rcamillo/CamilloDev/gh-pages/img/dat1.jpg" class="img-responsive" alt="Projeto Portfolio">
-                    <div class="carousel-caption">
-                        <p>Diretório Acadêmico de Tecnologia</p> <a href="dat.html" class="btn btn-success">Veja o projeto aqui</a> </div>
-                </div>
-            </div>
-            <!-- Left and right controls -->
-            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a>
-            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> <span class="sr-only">Next</span> </a>
-        </div>
-    </section>
-    <section id="sobre">
-        <div class="row">
-            <div class="col-sm-6">
-                <div class="banner-coder"> <img src="https://raw.githubusercontent.com/rcamillo/CamilloDev/gh-pages/img/coder.jpg" alt="Desenvolvedor">
-                    <div class="content">
-                        <h2>Developer</h2>
-                        <p>Eu desenvolvo sites responsivos, sempre pensando em performance e nas boas práticas de mercado. Também possuo um sólido conhecimento como Back End. Código é minha grande paixão.</p>
-                        <br/><br/><br/>
-                         <a href="https://goo.gl/y16RL3" class="btn btn-success">Veja meu curriculo</a>
+                <div class="col-sm-6 coluna">
+                    <div class="banner-design">
+                        <img src="https://raw.githubusercontent.com/rcamillo/CamilloDev/gh-pages/img/designer.jpg" alt="Designer">
+                        <div class="content">
+                            <h2>Designer</h2>
+                            <p>
+                                Eu desenho sua ideia desde a concepção até o produto completamente funcional e de qualidade. Sempre me preocupando de alinhar a experiência do usuário com o objetivo do seu negócio.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6">
-                <div class="banner-design"> <img src="https://raw.githubusercontent.com/rcamillo/CamilloDev/gh-pages/img/designer.jpg" alt="Designer">
-                    <div class="content">
-                        <h2>Designer</h2>
-                        <p>Eu desenho sua ideia desde a concepção até o produto completamente funcional e de qualidade. Sempre me preocupando de alinhar a experiência do usuário com o objetivo do seu negócio.</p>
-                    </div>
+        </section>
+        <section id="skills" class="text-center">
+            <h2 class="titulo">Habilidades</h2>
+            <br>
+            <div class="row linha">
+                <div class="col-sm-4"> <i class="material-icons logo-small">important_devices</i>
+                    <h3>Front End</h3>
+                    <p>
+                        Desenvolvimento de paginas web responsivas e otimizadas para exibição em mobiles e desktops.Utilizando tecnologias como HTML5, CSS3, JavaScript, Jquery, Bootstrap, JSON, Ajax, Grunt, entre outras.
+                    </p>
+                </div>
+                <div class="col-sm-4"> <i class="material-icons">settings</i>
+                    <h3>Back End</h3>
+                    <p>
+                        Desenvolvimento e arquitetura de sistemas que requerem utilização de linguagem Server Side, Integrações via API ou Web Services, e/ou comunicação com Banco de Dados. Utilizando: C#, .Net, MVC, Linq, Entity Framework.
+                    </p>
+                </div>
+                <div class="col-sm-4"> <i class="material-icons logo-small">brush</i>
+                    <h3>Design</h3>
+                    <p>
+                        Desenhando soluções para o seu projeto, sempre preocupado em oferecer uma otima experiência para o seu usuário. Realização de alguns processos como pesquisas com usuario, teste de usabilidade, wireframe, prototipação, card sorting, etc... 
+                    </p>
                 </div>
             </div>
-        </div>
-    </section>
-    <section id="skills" class="text-center">
-        <h2 class="titulo">Habilidades</h2>
-        <br>
-        <div class="row">
-            <div class="col-sm-4"> <i class="material-icons logo-small">important_devices</i>
-                <h3>Front End</h3>
-                <p> Desenvolvimento de paginas web responsivas e otimizadas para exibição em mobiles e desktops.Utilizando tecnologias como HTML5, CSS3, JavaScript, Jquery, Bootstrap, JSON, Ajax, Grunt, entre outras.</p>
+            <br>
+            <br>
+            <div class="row linha">
+                <div class="col-sm-4"> <i class="material-icons logo-small">storage</i>
+                    <h3>Banco de Dados</h3>
+                    <p>
+                        Desenvolvimento de Procedures, Functions, Script, Crud(inserir, atualizar, deletar, listar). Usando SQL Server, Postgre ou My SQL
+                    </p>
+                </div>
+                <div class="col-sm-4"> <i class="material-icons logo-small">device_hub</i>
+                    <h3>Versionamento</h3>
+                    <p>
+                        Gerenciamento de versões no desenvolvimento de software, utilizando Git ou SVN.
+                    </p>
+                </div>
+                <div class="col-sm-4"> <i class="material-icons logo-small">work</i>
+                    <h3>Serviços</h3>
+                    <p>
+                        Utilizando todo esse conhecimento, também presto serviços de freelance desenvolvendo sites, eccomerces, layouts entre outros serviços.
+                    </p>
+                </div>
             </div>
-            <div class="col-sm-4"> <i class="material-icons">settings</i>
-                <h3>Back End</h3>
-                <p>Desenvolvimento e arquitetura de sistemas que requerem utilização de linguagem Server Side, Integrações via API ou Web Services, e/ou comunicação com Banco de Dados. Utilizando: C#, .Net, MVC, Linq, Entity Framework. </p>
+        </section>
+       <section id="contato" class="text-center">
+            <div class="row linha">
+                <h2>Contato</h2>
+                <div class="col-sm-6 formulario">
+                    <form action="https://formspree.io/camillodeveloper@gmail.com" method="POST" class="envio" >
+                        <p>Fale comigo!</p>
+                        <input type="text" class="input" name="name" required placeholder=" Nome*">
+                        <input type="text" class="input" name="_replyto" required placeholder=" adriano@gmail.com*">
+                        <input type="text" class="input" name="telefone" placeholder=" Telefone">
+                        <textarea name="mensagem" class="input" required id="msg" placeholder=" Digite aqui sua mensagem..."></textarea>
+                        <input type="submit" class="btn btn-success" value="Enviar"> </form>
+                    <br/> </div>
+                <div class="col-sm-6 dados">
+                    <p><span class="glyphicon glyphicon-map-marker"></span> Rio de Janeiro, Brasil</p>
+                    <p><span class="glyphicon glyphicon-phone"></span> +55 21 97047-4317</p>
+                    <p><span class="glyphicon glyphicon-envelope"></span> camillodeveloper@gmail.com</p>
+                    <p> <a href="https://linkedin.com/in/camillodev" target="_blank"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a> <a href="https://instagram.com/camillodeveloper/" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a><a href="https://github.com/rcamillo" target="_blank"><i class="fa fa-github-alt fa-2x" aria-hidden="true"></i></a></p>
+                </div>
             </div>
-            <div class="col-sm-4"> <i class="material-icons logo-small">brush</i>
-                <h3>Design</h3>
-                <p> Desenhando soluções para o seu projeto, sempre preocupado em oferecer uma otima experiência para o seu usuário. Realização de alguns processos como pesquisas com usuario, teste de usabilidade, wireframe, prototipação, card sorting, etc... </p>
-            </div>
-        </div>
-        <br>
-        <br>
-        <div class="row">
-            <div class="col-sm-4"> <i class="material-icons logo-small">storage</i>
-                <h3>Banco de Dados</h3>
-                <p>Desenvolvimento de Procedures, Functions, Script, Crud(inserir, atualizar, deletar, listar). Usando SQL Server, Postgre ou My SQL</p>
-            </div>
-            <div class="col-sm-4"> <i class="material-icons logo-small">device_hub</i>
-                <h3>Versionamento</h3>
-                <p>Gerenciamento de versões no desenvolvimento de software, utilizando Git ou SVN.</p>
-            </div>
-            <div class="col-sm-4"> <i class="material-icons logo-small">work</i>
-                <h3>Serviços</h3>
-                <p>Utilizando todo esse conhecimento, também presto serviços de freelance desenvolvendo sites, eccomerces, layouts entre outros serviços.</p>
-            </div>
-        </div>
-    </section>
-   <section id="contato" class="text-center">
-        <div class="row">
-            <h2>Contato</h2>
-            <div class="col-sm-6" id="formulario">
-                <form action="https://formspree.io/camillodeveloper@gmail.com" method="POST" class="envio" >
-                    <p>Fale comigo!</p>
-                    <input type="text" class="input" name="name" required placeholder=" Nome*">
-                    <input type="text" class="input" name="_replyto" required placeholder=" adriano@gmail.com*">
-                    <input type="text" class="input" name="telefone" placeholder=" Telefone">
-                    <textarea name="mensagem" class="input" required id="msg" placeholder=" Digite aqui sua mensagem..."></textarea>
-                    <input type="submit" class="btn btn-success" value="Enviar"> </form>
-                <br/> </div>
-            <div class="col-sm-6" id="dados">
-                <p><span class="glyphicon glyphicon-map-marker"></span> Rio de Janeiro, Brasil</p>
-                <p><span class="glyphicon glyphicon-phone"></span> +55 21 97047-4317</p>
-                <p><span class="glyphicon glyphicon-envelope"></span> camillodeveloper@gmail.com</p>
-                <p> <a href="https://linkedin.com/in/camillodev"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a> <a href="https://instagram.com/camillodeveloper/"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a><a href="https://github.com/rcamillo"><i class="fa fa-github-alt fa-2x" aria-hidden="true"></i></a></p>
-            </div>
-        </div>
-    </section>
-    <footer class="container-fluid">
-        <p>Desenvolvido por <a href="https://www.linkedin.com/in/camillodev" style="color:#428bca;" title="Rafael Camillo">Camillo Dev</a></p>
-    </footer>
-</body>
-
+        </section>
+        <footer class="container-fluid">
+            <p>Desenvolvido por <a href="https://www.linkedin.com/in/camillodev" target="_blank" class="link" title="Rafael Camillo">Camillo Dev</a></p>
+        </footer>
+    </body>
+    <script src="js/script.js"></script>
 </html>
