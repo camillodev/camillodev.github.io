@@ -28,14 +28,15 @@ body {
     line-height: 1.5;
 }
 
-h2 {
+
+.titulo {    
+    font-size: 30px;
     font-weight: 700;
-    font-size: 25px;
 }
 
-h3 {
+.subtitulo {
+    font-size: 25px;
     font-weight: 600;
-    font-size: 20px;
 }
 
 
@@ -50,7 +51,7 @@ h3 {
     .btn{
         font-size: 34px;
     }
-    h2{
+    .titulo{
         font-size: 44px;
     }
     .projeto-name{
@@ -140,10 +141,7 @@ h3 {
     margin: 0;
 }
 
-.titulo {
-    margin-top: 20px;
-    text-align: center;
-}
+
 
 #skills,
 #contato {
@@ -155,7 +153,7 @@ h3 {
     text-align: center;
 }
 
-#skills h2 {
+#skills .titulo {
     color: #e53935;
 }
 
@@ -481,4 +479,8 @@ footer p {
     background-color: #e53935;
     border-color: #e53935;
     color: #fff;
+}
+
+.coracao{
+    color: #e53935;
 }
